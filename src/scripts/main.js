@@ -3,10 +3,10 @@
 const thumbs = document.getElementById('thumbs');
 const largeImg = document.getElementById('largeImg');
 
-thumbs.addEventListener('click', () => {
-  event.preventDefault();
+thumbs.addEventListener('click', (e) => {
+  e.preventDefault();
 
-  const link = event.target.closest('a');
+  const link = e.target.closest('a');
 
   if (!link) {
     return;
